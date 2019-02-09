@@ -27,7 +27,7 @@ class Carousel {
         //default image display through this method of this.index is first set back to display none.  Then the image index is looped through
         //IF statement to determine what the new index Image array should be set on, afterwhich Image is then set back to display block:
         //assumes image index no longer at 0 & eventListener maybe have been clicked x times (this is the old image[index] we are setting to display none)
-        this.img[this.index].style.display='none';
+      
         //Because button moves slideshow to the right, want create loop that goes forward & cycles. If the Index is at max index/ array length-1, loop starts index back to zero
     
         if(this.index === this.img.length-1){
@@ -45,7 +45,7 @@ class Carousel {
        //default image display through this method of this.index is first set back to display none.  Then the image index is looped through
         //IF statement to determine what the new index Image array should be set on, afterwhich Image is then set back to display block:
         //assumes image index no longer at 0 & eventListener maybe have been clicked x times (this is the old image[index] we are setting to display none)
-        this.img[this.index].style.display= "none";
+     
     //b/c the button moves the slideshow left, we want to create a loop that goes backwards & also cycles. If index has decreased to index= 0, then make index start at index array length -1, and continue to increment backwards. 
     
         if (this.index === 0) {
