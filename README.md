@@ -32,13 +32,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+    The DOM is an object oriented representation of the web page, it allows scripting languages like Javascript and other programming languages to change the document structure, style, and content .  The DOM is likened to a programming interface for HTML and XML documents, and represents the documents as nodes & objects that progamming languges can manipulated and modified.  It can be displayed in the browser indow or as the HTML source.
+
 2. What is an event?
+
+    Events can take place in the DOM. They can be user generated such as mouse movements, or keyboard events. Other events can be created by APIs (such as when a video is paused etc).  The DOM allows us to trigger events through programming, using for example the .click method, or EventTarget.dispatchEvent. These can include, keydown, mouseleave, click, contentmenu. They are all "things" that can happen to the HTML element. They can  DOM elements are then set up to "listen" for these events and execute code in repsonse to handle them.  
 
 3. What is an event listener?
 
+    Is a method that attaches an event handler to a specific element.  Method that allows control over how elements react to events such as click, scroll.  It allows programming language like javascript to have elements react to an event, even if the user can't control the HTML markup. 
+
+
 4. Why would we convert a NodeList into an Array?
 
+    The nodelist only has the forEach method available to it, converting the nodelist into an Array allows access to all the array methods and have more control when manipulating our DOM elements. These array methods are much more robust, and include map, filter, etc.
+
 5. What is a component?
+
+    A library of different technologies that allows us to create customized elements, that are functional apart from the rest of our code, and that is reusable within all our web apps. The 3 technologies include custom elements, (Javascript APIs to customize elements and their behaviors), Shadow DOM (attaching a encapsulated DOM tree to an element, rendered seperate from main DOM, and the element's feature is scripted without affectig the other parts of the document) and HTML templates(ability to write markup templates that are not displayed in the rendered page & can be reused).   They can be used with any Javascript library or framework that works with HTML.  
+    
 
 ### Git Set up
 
